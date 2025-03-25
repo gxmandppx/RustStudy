@@ -8,9 +8,23 @@
 		"ghcr.io/devcontainers/features/rust:1": {
 			"version": "latest",
 			"profile": "default",
-			"targets": "aarch64-unknown-linux-gnu"
+			"targets": "aarch64-unknown-linux-gnu",
+			"customizations": {
+                                "vscode": {
+                                        "extensions": [
+                                                "vadimcn.vscode-lldb",
+                                                "rust-lang.rust-analyzer",
+                                                "tamasfe.even-better-toml"
+                                                ],
+                                                "settings": {
+                                                "files.watcherExclude": {
+                                                "**/target/**": true
+                }
+            }
+        }
+    },
 		}
-	},
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
