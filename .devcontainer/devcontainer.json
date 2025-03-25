@@ -1,11 +1,14 @@
 {
-	"name": "Alpine",
-	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.21",
+	"name": "Debian",
+	"image": "mcr.microsoft.com/devcontainers/base:bookworm",
 	"features": {
 		"ghcr.io/devcontainers/features/rust:1": {
 			"version": "latest",
 			"profile": "default",
 			"targets": "aarch64-unknown-linux-gnu"
+		},
+		"ghcr.io/itsmechlark/features/postgresql:1": {
+			"version": "latest"
 		}
 	}
 }
