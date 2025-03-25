@@ -1,20 +1,12 @@
 {
-  "name": "Rust-Alpine",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "name": "Rust on Alpine",
+  "dockerfile": "dockerfile",
+  "remoteUser": "codespace",
+  "extensions": [
+    "MS-CEINTL.vscode-language-pack-zh-hans"
+  ],
   "settings": {
-    "workbench.colorTheme": "One Dark Pro",
-    "locale": "zh-cn"
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "MS-CEINTL.vscode-language-pack-zh-hans", // 简体中文语言包
-        "zhuangtongfa.Material-theme",           // One Dark Pro主题
-        "rust-lang.rust-analyzer"                // Rust语言支持
-      ]
-    }
-  },
-  "remoteUser": "vscode"
+    "workbench.theme": "One Dark",
+    "locale": "zh-CN"
+  }
 }
